@@ -1,0 +1,29 @@
+* st - simple terminal
+
+=st= is a simple terminal emulator for X which sucks less.
+
+* Personal fork
+
+This version of st includes the following changes:
+- Custom default colorscheme and font (custom Iosvkem and Iosevka)
+- alpha patch
+- scrollback patch
+- clipboard patch
+
+* Requirements
+
+In order to build =st= you need the =Xlib= header files.
+
+* Installation
+
+Edit =config.mk= to match your local setup (this fork of =st= is
+installed into the =/usr= namespace by default).
+
+Afterwards enter the following command to build and install =st= (if
+necessary as root):
+
+#+begin_src sh
+  make clean install
+#+end_src
+    
+
